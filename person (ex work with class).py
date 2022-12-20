@@ -48,5 +48,14 @@ man = Person('Alex', 30, 188, 100)
 man.description_person()
 man.get_weight()
 
+# inheritance (наследование класса)
+class Warrior(Person):
+    """создаем новый класс наследуют данные от другого класса"""
+    def __init__(self, name, age, height, weight):
+        super().__init__(name, age, height, weight)
+
+Warrior = Warrior ('Makdak', 32, 200, 120)
+Warrior.description_person()
+
 
 
