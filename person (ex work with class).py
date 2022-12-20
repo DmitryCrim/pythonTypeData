@@ -48,3 +48,5 @@ man = Person('Alex', 30, 188, 100)
 man.description_person()
 man.get_weight()
 
+
+
