@@ -53,9 +53,13 @@ class Warrior(Person):
     """создаем новый класс наследуют данные от другого класса"""
     def __init__(self, name, age, height, weight):
         super().__init__(name, age, height, weight)
-
+        # добавляем новый атрибут данному классу
+        self.rage = 100
+    def get_rage(self):
+        print('Заряд ярости равен ' + str(self.rage))
 Warrior = Warrior ('Makdak', 32, 200, 120)
 Warrior.description_person()
+Warrior.get_rage()
 
 
 
